@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ハイアンドローゲーム</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .container {
+            background: #f8f8f8;
+            padding: 20px;
+            display: inline-block;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #restart {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ハイアンドローゲーム</h1>
+        <p id="current-card">現在のカード: <span id="card-value">-</span></p>
+        <button id="high" type="button">High</button>
+        <button id="low" type="button">Low</button>
+        <p id="result"></p>
+        <p id="score">連続正解数: 0</p>
+        <button id="restart" type="button">もう一度プレイ</button>
+    </div>
+    <script src="final.js"></script>
+</body>
+</html>
